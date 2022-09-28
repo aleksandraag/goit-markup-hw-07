@@ -26,29 +26,40 @@
 
     <header>
       <div class="container header-container">
-        <a class="logo-header" href="index.html">Web<span>Studio</span> </a>
+        <a class="logo logo--header" href="index.html"
+          >Web<span>Studio</span>
+        </a>
         <nav>
-          <ul class="menu">
-            <li><a class="link-active" href="index.html">Agencja</a></li>
+          <ul class="nav">
             <li>
-              <a href="portfolio.html"> Portfolio</a>
+              <a class="nav__link nav__link--active" href="index.html"
+                >Agencja</a
+              >
             </li>
-            <li><a href="">Kontakt</a></li>
+            <li>
+              <a class="nav__link" href="portfolio.html"> Portfolio</a>
+            </li>
+            <li><a class="nav__link" href="">Kontakt</a></li>
           </ul>
         </nav>
 
-        <ul class="contact-header">
+        <ul class="contact contact--header">
           <li>
-            <a class="contact-icon" href="mailto:info@devstudio.com"
-              ><svg class="envelope" width="16" height="12">
+            <a
+              class="contact__link contact__link--header"
+              href="mailto:info@devstudio.com"
+              ><svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contact-icon" href="tel:+48111111111">
-              <svg class="smartphone" width="10" height="16">
+            <a
+              class="contact__link contact__link--header"
+              href="tel:+48111111111"
+            >
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
             >
@@ -56,71 +67,70 @@
         </ul>
       </div>
     </header>
-    <div class="headline-line"></div>
+    <div class="header-bottomline"></div>
 
     <!-- SECTIONS - main content -->
 
     <!-- Main headline & Button -->
 
     <main class="main">
-      <section class="container main-headline">
-        <h1 class="container main-title">
+      <section class="container banner">
+        <h1 class="container banner__title">
           Efektywne rozwiązania <br />dla waszego biznesu
         </h1>
-
-        <button class="main-button" type="button" data-modal-open>
-          <span class="main-button-title">Zamów usługę</span>
+        <button class="banner__button" type="button" data-modal-open>
+          Zamów usługę
         </button>
       </section>
 
       <!-- Lorem -->
 
       <section>
-        <ul class="section container list-lorem">
+        <ul class="section container lorem">
           <li>
-            <div class="lorem-icon-box">
+            <div class="lorem__icon">
               <svg class="antenna" width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna-1"></use>
               </svg>
             </div>
-            <h5 class="lorem-headline">LOREM IPSUM</h5>
-            <p class="lorem-content">
+            <h5 class="lorem__headline">LOREM IPSUM</h5>
+            <p class="lorem__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="lorem-icon-box">
+            <div class="lorem__icon">
               <svg class="clock" width="70" height="70">
                 <use href="./images/icons.svg#icon-clock-1"></use>
               </svg>
             </div>
-            <h5 class="lorem-headline">LOREM IPSUM</h5>
-            <p class="lorem-content">
+            <h5 class="lorem__headline">LOREM IPSUM</h5>
+            <p class="lorem__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="lorem-icon-box">
+            <div class="lorem__icon">
               <svg class="diagram" width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram-1"></use>
               </svg>
             </div>
-            <h5 class="lorem-headline">LOREM IPSUM</h5>
-            <p class="lorem-content">
+            <h5 class="lorem__headline">LOREM IPSUM</h5>
+            <p class="lorem__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="lorem-icon-box">
+            <div class="lorem__icon">
               <svg class="astronaut" width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
               </svg>
             </div>
-            <h5 class="lorem-headline">LOREM IPSUM</h5>
-            <p class="lorem-content">
+            <h5 class="lorem__headline">LOREM IPSUM</h5>
+            <p class="lorem__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -132,44 +142,45 @@
 
       <section class="section container">
         <h2 class="container secondary-headline">Czym się zajmujemy</h2>
-        <ul class="container list-img">
-          <li class="thumb">
+        <ul class="container work">
+          <li class="work__img">
             <img
               src="images/img-1.jpg"
               alt="praca na komputerze pisanie kodu"
               width="370"
               height="294"
             />
-            <p class="label-1">aplikacje komputerowe</p>
+            <p class="work__label work__label--1">aplikacje komputerowe</p>
           </li>
-          <li class="thumb">
+          <li class="work__img">
             <img
               src="images/img-2.jpg"
               alt="praca na komputerze UI"
               width="370"
               height="294"
             />
-            <p class="label-2">aplikacje mobilne</p>
+            <p class="work__label work__label--2">aplikacje mobilne</p>
           </li>
-          <li class="thumb">
+          <li class="work__img">
             <img
               src="images/img-3.jpg"
               alt="praca na komputerze grafik"
               width="370"
               height="294"
             />
-            <p class="label-3">rozwiązania graficzne</p>
+            <p class="work__label work__label--3">rozwiązania graficzne</p>
           </li>
         </ul>
       </section>
 
-      <!-- Secondary headline & Team images, members, job titles -->
+      <!-- Secondary headline & Team img, name, job -->
 
-      <section class="section team-container">
+      <section class="section container team">
         <h2 class="secondary-headline">Nasz zespół</h2>
-        <ul class="container list-team">
-          <li class="team-item">
-            <figure class="team-img">
+
+        <ul class="container team__list">
+          <li class="team__item">
+            <figure class="team__img">
               <img
                 src="images/team-img-1.jpg"
                 alt="John Doe product designer"
@@ -177,10 +188,10 @@
                 height="260"
               />
 
-              <h5 class="team-headline">John Doe</h5>
-              <p class="job">Product Designer</p>
+              <h5 class="team__name">John Doe</h5>
+              <p class="team__job">Product Designer</p>
 
-              <ul class="socials">
+              <ul class="socials socials--team">
                 <li>
                   <a
                     href="https://instagram.com"
@@ -232,8 +243,8 @@
               </ul>
             </figure>
           </li>
-          <li class="team-item">
-            <figure class="team-img">
+          <li class="team__item">
+            <figure class="team__img">
               <img
                 src="images/team-img-2.jpg"
                 alt="John Doe frontend developer"
@@ -241,10 +252,10 @@
                 height="260"
               />
 
-              <h5 class="team-headline">John Doe</h5>
-              <p class="job">Frontend Developer</p>
+              <h5 class="team__name">John Doe</h5>
+              <p class="team__job">Frontend Developer</p>
 
-              <ul class="socials">
+              <ul class="socials socials--team">
                 <li>
                   <a
                     href="https://instagram.com"
@@ -296,8 +307,8 @@
               </ul>
             </figure>
           </li>
-          <li class="team-item">
-            <figure class="team-img">
+          <li class="team__item">
+            <figure class="team__img">
               <img
                 src="images/team-img-3.jpg"
                 alt="John Doe marketing"
@@ -305,10 +316,10 @@
                 height="260"
               />
 
-              <h5 class="team-headline">John Doe</h5>
-              <p class="job">Marketing</p>
+              <h5 class="team__name">John Doe</h5>
+              <p class="team__job">Marketing</p>
 
-              <ul class="socials">
+              <ul class="socials socials--team">
                 <li>
                   <a
                     href="https://instagram.com"
@@ -360,8 +371,8 @@
               </ul>
             </figure>
           </li>
-          <li class="team-item">
-            <figure class="team-img">
+          <li class="team__item">
+            <figure class="team__img">
               <img
                 src="images/team-img-4.jpg"
                 alt="John Doe UI designer"
@@ -369,10 +380,10 @@
                 height="260"
               />
 
-              <h5 class="team-headline">John Doe</h5>
-              <p class="job">UI Designer</p>
+              <h5 class="team__name">John Doe</h5>
+              <p class="team__job">UI Designer</p>
 
-              <ul class="socials">
+              <ul class="socials socials--team">
                 <li>
                   <a
                     href="https://instagram.com"
@@ -437,7 +448,7 @@
               rel="noreferrer noopener"
               class="clients-link"
             >
-              <svg class="Logo" width="106" height="60.04">
+              <svg class="Logo-0" width="106" height="60.04">
                 <use href="./images/icons.svg#icon-Logo"></use>
               </svg>
             </a>
@@ -511,16 +522,22 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-address">
-          <a class="logo-footer" href="index.html">Web<span>Studio</span></a>
+          <a class="logo logo--footer" href="index.html"
+            >Web<span>Studio</span></a
+          >
           <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-          <ul class="contact-list-footer">
+          <ul class="contact contact--footer">
             <li>
-              <a class="contact-link-footer" href="mailto:info@example.com"
+              <a
+                class="contact__link contact__link--footer"
+                href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
             <li>
-              <a class="contact-link-footer" href="tel:+48111111111"
+              <a
+                class="contact__link contact__link--footer"
+                href="tel:+48111111111"
                 >+48 111 111 111</a
               >
             </li>
@@ -528,7 +545,7 @@
         </div>
         <div class="footer-socials">
           <h5 class="socials-headline-footer">Dołącz do nas</h5>
-          <ul class="footer-socials-list">
+          <ul class="socials socials--footer">
             <li>
               <a
                 href="https://instagram.com"
