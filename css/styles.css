@@ -178,52 +178,7 @@ body {
 
 /* SECTIONS - main content */
 
-/* HEADLINES */
-
-.headline-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.headline-h4 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  color: var(--main-text-color);
-}
-
-.headline-h5 {
-   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-  .headline-h5--lorem {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  padding: 0;
-  color: var(--main-text-color);
-}
-
-.headline-h5--footer {
-  color: var(--button-text-color);
-  margin-bottom: 20px;
-}
-
-/* Main headline & Button */
+/* BANNER main & BUTTON */
 
 .banner {
   background-color: var(--mainheadline-footer-color);
@@ -271,7 +226,52 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Lorem */
+/* HEADLINES */
+
+.headline-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.headline-h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: var(--main-text-color);
+}
+
+.headline-h5 {
+   font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+  .headline-h5--lorem {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 0;
+  color: var(--main-text-color);
+}
+
+.headline-h5--footer {
+  color: var(--button-text-color);
+  margin-bottom: 20px;
+}
+
+/* LOREM */
 
 .lorem {
   list-style: none;
@@ -295,7 +295,7 @@ body {
   color: var(--contactncontent-text-color);
 }
 
-/* Secondary headline & WORK */
+/* WORK */
 
 
 .work {
@@ -338,7 +338,7 @@ body {
   padding: 27px 94px;
 }
 
-/* Secondary headline & Team images, members, job titles */
+/* TEAM */
 
 .team {
   background-color: var(--alternative-button-background-color);
@@ -377,14 +377,13 @@ width: 100%;
   color: var(--contactncontent-text-color);
 }
 
-/* SOCIALS header & footer */
+/* SOCIALS team & footer */
 
 .socials {
   list-style: none;
   display: flex;
   gap: 10px;
   padding: 0;
- 
 }
 
 .socials--team {
@@ -442,6 +441,7 @@ width: 100%;
   padding: 0;
   margin-bottom: 50px;
 }
+
 button {
   font-family: "Roboto";
   font-style: normal;
@@ -718,7 +718,7 @@ img {
   transition: transform 250ms var(--transition-fn);
 }
 
-.close-btn {
+.modal__close {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -735,12 +735,12 @@ img {
   justify-content: center;
 }
 
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.modal__headline {
+.modal__header {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4375em;
@@ -751,7 +751,7 @@ img {
   margin-bottom: 12px;
 }
 
-.form-label {
+.modal__label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -764,17 +764,17 @@ img {
   color: var(--contactncontent-text-color);
 }
 
-.form-label:focus-within > .modal-form-input {
+.modal__label:focus-within > .modal__input {
   border-color: var(--button-backgroundnhover-color);
   transition: border-color 250ms var(--transition-fn);
 }
 
-.form-label:focus-within > .icon-form {
+.modal__label:focus-within > .modal__icon {
   fill: var(--button-backgroundnhover-color);
   transition: fill 250ms var(--transition-fn);
 }
 
-.modal-form-input {
+.modal__input {
   position: relative;
   outline: none;
   width: 448px;
@@ -785,7 +785,7 @@ img {
   margin-bottom: 10px;
 }
 
-.modal-form-comment {
+.modal__comment {
   resize: none;
   outline: none;
   width: 448px;
@@ -795,12 +795,12 @@ img {
   padding: 12px 16px;
 }
 
-.modal-form-comment:focus {
+.modal__comment:focus {
   border-color: var(--button-backgroundnhover-color);
   transition: border-color 250ms var(--transition-fn);
 }
 
-.icon-form {
+.modal__icon {
   position: absolute;
   top: 40%;
   left: 10%;
@@ -809,43 +809,7 @@ img {
   fill: var(--main-text-color);
 }
 
-.input-check {
-  position: relative;
-  opacity: 0;
-}
-
-.icon-check {
-  position: absolute;
-  fill: var(--button-text-color);
-  top: 10%;
-  right: 97%;
-  border: 1px solid var(--main-text-color);
-}
-
-input:checked + .icon-check {
-  fill: var(--button-backgroundnhover-color);
-  border-color: var(--button-backgroundnhover-color);
-  border-radius: 2px;
-  transition: border-color 250ms var(--transition-fn);
-  transition: fill 250ms var(--transition-fn);
-}
-
-.terms-privacy {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5em;
-  letter-spacing: 0.03em;
-}
-
-.terms-privacy-link {
-  color: var(--button-backgroundnhover-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5em;
-  letter-spacing: 0.03em;
-}
-
-.terms-checkbox {
+.checkbox {
   position: relative;
   font-weight: 400;
   font-size: 14px;
@@ -856,7 +820,43 @@ input:checked + .icon-check {
   color: var(--contactncontent-text-color);
 }
 
-.form-button {
+.checkbox__input {
+  position: relative;
+  opacity: 0;
+}
+
+.checkbox__icon {
+  position: absolute;
+  fill: var(--button-text-color);
+  top: 10%;
+  right: 97%;
+  border: 1px solid var(--main-text-color);
+}
+
+input:checked + .checkbox__icon {
+  fill: var(--button-backgroundnhover-color);
+  border-color: var(--button-backgroundnhover-color);
+  border-radius: 2px;
+  transition: border-color 250ms var(--transition-fn);
+  transition: fill 250ms var(--transition-fn);
+}
+
+.checkbox__terms {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+}
+
+.checkbox__link {
+  color: var(--button-backgroundnhover-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+}
+
+.modal__button {
   width: 200px;
   height: 50px;
   color: var(--button-text-color);
