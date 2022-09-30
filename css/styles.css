@@ -386,12 +386,14 @@ body {
 
 .work__img > .work__label {
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
+  line-height: 1em;
   letter-spacing: 0.03em;
   color: var(--button-text-color);
   position: absolute;
-  bottom: 0;
+  top: 226px;
   margin: 0;
   background: rgba(47, 48, 58, 0.8);
   z-index: 2;
