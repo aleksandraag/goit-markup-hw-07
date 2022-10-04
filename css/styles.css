@@ -13,6 +13,11 @@
   --gradient: rgba(47, 48, 58, 0.4);
   --icons-color: #afb1b8;
   --transition-fn: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* fonts */
+
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 }
 
 /* Box-sizing for whole website */
@@ -25,16 +30,16 @@
 /* Styles for whole website */
 body {
   color: var(--main-text-color);
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: var(--primary-font), var(--secondary-font);
   font-style: normal;
   font-weight: 400;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  padding: 0%;
+  padding: 0;
 }
 
-/* Container for header, sections and footer */
+/* Container for header, body and footer */
 
 .container {
   width: 1200px;
@@ -61,7 +66,7 @@ body {
 /* LOGO header + footer */
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font);
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
@@ -95,7 +100,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   margin-left: auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--transition-fn);
 }
 .nav__link:hover,
 .nav__link:focus {
@@ -123,7 +128,7 @@ body {
 .contact__link {
   text-decoration: none;
   font-size: 14px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--transition-fn);
 }
 
 .contact a:hover,
@@ -147,7 +152,7 @@ body {
   margin-right: 10px;
   color: var(--contactncontent-text-color);
   fill: var(--contactncontent-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--transition-fn);
 }
 
 .contact__link--header:hover .contact__icon,
@@ -216,9 +221,9 @@ body {
   border-radius: 4px;
   background-color: var(--button-backgroundnhover-color);
   color: var(--button-text-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--transition-fn),
+    color 250ms var(--transition-fn),
+    box-shadow 250ms var(--transition-fn);
 }
 
 .button:hover,
@@ -470,8 +475,8 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--transition-fn),
+    fill 250ms var(--transition-fn);
 }
 
 .socials__link--team {
@@ -550,8 +555,8 @@ body {
   background-color: var(--button-text-color);
   margin: 0 auto;
   padding: 0%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--transition-fn),
+    fill 250ms var(--transition-fn);
 }
 
 .grid__img:hover,
@@ -582,7 +587,7 @@ body {
   line-height: 28px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--transition-fn);
   z-index: -1;
 }
 
@@ -623,8 +628,8 @@ body {
   justify-content: center;
   width: 170px;
   height: 92px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--transition-fn),
+    fill 250ms var(--transition-fn);
 }
 
 .clients__link:hover,
@@ -681,7 +686,6 @@ body {
 }
 
 .newsletter__textbutton {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875em;

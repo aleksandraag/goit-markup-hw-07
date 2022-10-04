@@ -1,18 +1,11 @@
-/* Box-sizing for whole website */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Styles for whole website */
 body {
   color: var(--main-text-color);
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: var(--primary-font) , var(--secondary-font);
   font-style: normal;
   font-weight: 400;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  padding: 0%;
+  padding: 0;
 }
