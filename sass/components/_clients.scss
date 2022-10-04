@@ -1,4 +1,4 @@
-/* CLIENTS */
+@import "../utils/variables";
 
 .clients {
   list-style: none;
@@ -16,8 +16,7 @@
   justify-content: center;
   width: 170px;
   height: 92px;
-  transition: border-color 250ms $transition-fn,
-    fill 250ms $transition-fn;
+  transition: border-color 250ms $transition-fn, fill 250ms $transition-fn;
 }
 
 &__link:hover,
