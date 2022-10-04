@@ -1,7 +1,7 @@
-/* Styles for whole website */
+// Styles for whole website 
 body {
-  color: var(--main-text-color);
-  font-family: var(--primary-font) , var(--secondary-font);
+  color: $main-text-color;
+  font-family: $primary-font , $secondary-font;
   font-style: normal;
   font-weight: 400;
   box-sizing: border-box;
