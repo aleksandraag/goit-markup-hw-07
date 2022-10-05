@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="zadanie domowe 5 HTML/CSS" />
+    <meta name="description" content="zadanie domowe 7 HTML/CSS" />
     <title>Portfolio</title>
     <link
       rel="stylesheet"
@@ -13,32 +13,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
+    <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- HEADER-->
     <header>
       <div class="container header-container">
-        <a class="logo logo--header" href="index.html">Web<span>Studio</span> </a>
+        <a class="logo logo--header" href="index.html"
+          >Web<span>Studio</span>
+        </a>
         <nav>
           <ul class="nav">
             <li><a class="nav__link" href="index.html">Agencja</a></li>
             <li>
-              <a class="nav__link nav__link--active" href="portfolio.html"> Portfolio</a>
+              <a class="nav__link nav__link--active" href="portfolio.html">
+                Portfolio</a
+              >
             </li>
             <li><a class="nav__link" href="">Kontakt</a></li>
           </ul>
         </nav>
 
-     <ul class="contact contact--header">
+        <ul class="contact contact--header">
           <li>
-            <a class=" contact__link contact__link--header" href="mailto:info@devstudio.com"
+            <a
+              class="contact__link contact__link--header"
+              href="mailto:info@devstudio.com"
               ><svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -46,7 +53,10 @@
             >
           </li>
           <li>
-            <a class=" contact__link contact__link--header" href="tel:+48111111111">
+            <a
+              class="contact__link contact__link--header"
+              href="tel:+48111111111"
+            >
               <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
@@ -65,11 +75,31 @@
 
       <section class="section">
         <ul class="container categories">
-          <li><button class="button button--categories" type="button">Wszystkie</button></li>
-          <li><button class="button button--categories" type="button">Strony</button></li>
-          <li><button class="button button--categories" type="button">Aplikacje</button></li>
-          <li><button class="button button--categories" type="button">Design</button></li>
-          <li><button class="button button--categories" type="button">Marketing</button></li>
+          <li>
+            <button class="button button--categories" type="button">
+              Wszystkie
+            </button>
+          </li>
+          <li>
+            <button class="button button--categories" type="button">
+              Strony
+            </button>
+          </li>
+          <li>
+            <button class="button button--categories" type="button">
+              Aplikacje
+            </button>
+          </li>
+          <li>
+            <button class="button button--categories" type="button">
+              Design
+            </button>
+          </li>
+          <li>
+            <button class="button button--categories" type="button">
+              Marketing
+            </button>
+          </li>
         </ul>
         <ul class="container grid">
           <li class="grid__item">
@@ -124,9 +154,7 @@
                   </p>
                 </div>
                 <figcaption class="grid__figcaption">
-                  <h3 class="headline-h3">
-                    Grafika New Orlean vs Golden Star
-                  </h3>
+                  <h3 class="headline-h3">Grafika New Orlean vs Golden Star</h3>
                   <p class="grid__category">Design</p>
                 </figcaption>
               </figure>
@@ -340,7 +368,7 @@
     </main>
 
     <!-- FOOTER -->
-      <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__info">
           <a class="logo logo--footer" href="index.html"

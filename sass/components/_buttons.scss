@@ -22,7 +22,7 @@
   &--categories {
     font-weight: 500;
     line-height: 1.625em;
-    background-color: $lternative-button-background-color;
+    background-color: $alternative-button-background-color;
     color: $main-text-color;
     letter-spacing: 0.03em;
     padding: 6px 22px;
@@ -42,8 +42,8 @@
   &--modal {
     width: 200px;
     height: 50px;
-    color: var(--button-text-color);
-    background-color: var(--button-backgroundnhover-color);
+    color: $button-text-color;
+    background-color: $button-backgroundnhover-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top: 30px;
     margin-left: 164px;
