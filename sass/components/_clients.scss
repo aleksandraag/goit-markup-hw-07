@@ -5,22 +5,22 @@
   display: flex;
   gap: 30px;
   align-items: center;
-}
 
-&__link {
-  border: 1px solid $icons-color;
-  fill: var(--icons-color);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
-  transition: border-color 250ms $transition-fn, fill 250ms $transition-fn;
-}
+  &__link {
+    border: 1px solid $icons-color;
+    fill: $icons-color;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    transition: border-color 250ms $transition-fn, fill 250ms $transition-fn;
+  }
 
-&__link:hover,
-&__link:focus-within {
-  fill: $button-backgroundnhover-color;
-  border-color: $button-backgroundnhover-color;
+  &__link:hover,
+  &__link:focus-within {
+    fill: $button-backgroundnhover-color;
+    border-color: $button-backgroundnhover-color;
+  }
 }

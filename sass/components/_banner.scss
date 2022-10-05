@@ -3,7 +3,7 @@
 .banner {
   background-color: $mainheadline-footer-color;
   background-image: linear-gradient $gradient, $gradient,
-    url(../images/img-background.jpg);
+    url(./images/img-background.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,6 @@
   padding: 0;
   width: 100%;
   max-width: 1600px;
-}
 
 &__title {
   font-weight: 900;
@@ -25,4 +24,5 @@
   padding-top: 200px;
   padding-left: 252px;
   padding-right: 252px;
+}
 }

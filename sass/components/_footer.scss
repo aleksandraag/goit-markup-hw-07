@@ -3,7 +3,6 @@
 .footer {
   background-color: $mainheadline-footer-color;
   padding: 60px 0;
-}
 
 &__container {
   display: flex;
@@ -21,4 +20,5 @@
   margin-top: 20px;
   color: $button-text-color;
   white-space: nowrap;
+}
 }

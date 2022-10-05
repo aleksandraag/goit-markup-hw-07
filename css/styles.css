@@ -222,8 +222,7 @@ body {
   background-color: var(--button-backgroundnhover-color);
   color: var(--button-text-color);
   transition: background-color 250ms var(--transition-fn),
-    color 250ms var(--transition-fn),
-    box-shadow 250ms var(--transition-fn);
+    color 250ms var(--transition-fn), box-shadow 250ms var(--transition-fn);
 }
 
 .button:hover,
@@ -555,8 +554,7 @@ body {
   background-color: var(--button-text-color);
   margin: 0 auto;
   padding: 0%;
-  transition: color 250ms var(--transition-fn),
-    fill 250ms var(--transition-fn);
+  transition: color 250ms var(--transition-fn), fill 250ms var(--transition-fn);
 }
 
 .grid__img:hover,
