@@ -72,6 +72,7 @@ body {
   gap: 46px;
   margin-left: 93px;
 }
+
 .nav__link {
   text-decoration: none;
   font-weight: 500;
@@ -364,7 +365,8 @@ body {
   margin: 0 auto;
   gap: 30px;
 }
-.work .work__img {
+
+.work__img {
   position: relative;
   z-index: 1;
 }
