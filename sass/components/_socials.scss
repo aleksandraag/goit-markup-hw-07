@@ -7,45 +7,44 @@
   gap: 10px;
   padding: 0;
 
-&--team {
-  margin: 0 32px;
+  &--team {
+    margin: 0 32px;
+  }
+
+  &--footer {
+    margin-top: 12px;
+  }
 }
 
-&__link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  transition: background-color 250ms $transition-fn,
-    fill 250ms $transition-fn;
-}
+  transition: background-color 250ms $transition-fn, fill 250ms $transition-fn;
 
-&__link--team {
-  background-position: 50%;
-  margin-bottom: 30px;
-  color: $icons-color;
-  fill: $icons-color;
-}
+  &--team {
+    background-position: 50%;
+    margin-bottom: 30px;
+    color: $icons-color;
+    fill: $icons-color;
+  }
 
-&__link--team:hover,
-&__link--team:focus {
-  background-color: $button-backgroundnhover-color;
-  fill: $button-text-color;
-}
+  &--team:hover,
+  &--team:focus {
+    background-color: $button-backgroundnhover-color;
+    fill: $button-text-color;
+  }
 
-&--footer {
-  margin-top: 12px;
-}
+  &--footer {
+    fill: $button-text-color;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
-&__link--footer {
-  fill: $button-text-color;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-&__link--footer:hover,
-&__link--footer:focus {
-  background-color: $button-backgroundnhover-color;
-}
+  &--footer:hover,
+  &--footer:focus {
+    background-color: $button-backgroundnhover-color;
+  }
 }

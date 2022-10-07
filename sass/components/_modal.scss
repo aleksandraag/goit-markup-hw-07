@@ -108,16 +108,15 @@
   }
 }
 
-  .checkbox {
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: 20px;
-    margin-left: 55px;
-    margin-right: 54px;
-    margin-bottom: 0;
-    color: $contactncontent-text-color;
-  
+.checkbox {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 55px;
+  margin-right: 54px;
+  margin-bottom: 0;
+  color: $contactncontent-text-color;
 
   &__input {
     position: relative;
@@ -139,19 +138,16 @@
     transition: border-color 250ms $transition-fn;
     transition: fill 250ms $transition-fn;
   }
+}
 
-  &__terms {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5em;
-    letter-spacing: 0.03em;
-  }
+.checkbox__terms {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
 
-  &__link {
+  &--link {
     color: $button-backgroundnhover-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5em;
-    letter-spacing: 0.03em;
+    text-decoration: underline;
   }
-  }
+}

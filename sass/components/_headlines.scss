@@ -42,15 +42,16 @@
   font-size: 14px;
   line-height: 1em;
   letter-spacing: 0.03em;
-}
-.headline-h5--lorem {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  padding: 0;
-  color: $main-text-color;
-}
 
-.headline-h5--footer {
-  color: $button-text-color;
-  margin-bottom: 20px;
+  &--lorem {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+    color: $main-text-color;
+  }
+
+  &--footer {
+    color: $button-text-color;
+    margin-bottom: 20px;
+  }
 }
