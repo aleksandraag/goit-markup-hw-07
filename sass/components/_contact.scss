@@ -6,21 +6,11 @@
   list-style: none;
   display: flex;
 
-  & a:hover,
-  & a:focus {
-    color: $button-backgroundnhover-color;
-  }
-
   &__icon {
     margin-right: 10px;
     color: $contactncontent-text-color;
     fill: $contactncontent-text-color;
     transition: fill 250ms $transition-fn;
-  }
-  &--header:hover &__icon,
-  &--header:focus &__icon {
-    color: $button-backgroundnhover-color;
-    fill: $button-backgroundnhover-color;
   }
 
   &--header {
@@ -41,6 +31,17 @@
   text-decoration: none;
   font-size: 14px;
   transition: color 250ms $transition-fn;
+
+  &:hover,
+  &:focus {
+    color: $button-backgroundnhover-color;
+  }
+
+  &--header:hover .contact__icon,
+  &--header:focus .contact__icon {
+    color: $button-backgroundnhover-color;
+    fill: $button-backgroundnhover-color;
+  }
 
   &--header {
     font-weight: 500;
